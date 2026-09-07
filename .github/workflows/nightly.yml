@@ -94,12 +94,12 @@ jobs:
         with:
           path: ~/.cargo/registry/src/**/librocksdb-sys-*
       - name: Install cargo-udeps, and cache the binary
-        uses: baptiste0928/cargo-install@v1
+        uses: baptiste0928/cargo-install@v3
         with:
           crate: cargo-udeps
           locked: true
       - name: Install cargo-hakari, and cache the binary
-        uses: baptiste0928/cargo-install@v1
+        uses: baptiste0928/cargo-install@v3
         with:
           crate: cargo-hakari
           locked: true
